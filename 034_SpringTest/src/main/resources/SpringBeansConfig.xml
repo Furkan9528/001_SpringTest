@@ -5,4 +5,11 @@
 
 	
 
+	<bean id="gorevBean" class="com.furkankara.Emniyet"></bean>
+	
+	<bean id="memurBean" class="com.furkankara.Polis">
+		<constructor-arg ref="gorevBean"></constructor-arg>
+	</bean>
+	
+	
 </beans>

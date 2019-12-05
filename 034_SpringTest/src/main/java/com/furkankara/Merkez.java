@@ -10,11 +10,11 @@ public class Merkez {
 		
 		ConfigurableApplicationContext appCtx = 
 				new ClassPathXmlApplicationContext("SpringBeansConfig.xml");
+			
+		Memur memur = appCtx.getBean("memurBean",Memur.class);
+		memur.calis();
 		
-		appCtx.start(); //Ayaga kaldiriliyor.		
-		appCtx.refresh();
-		appCtx.stop();
-		appCtx.close();
+		
 		
 	}
 
